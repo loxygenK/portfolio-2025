@@ -1,0 +1,18 @@
+.hidden {
+  display: none;
+}
+
+.viewportRoot {
+  transform-origin: center;
+
+  &.repositioned {
+    right: 
+  
+  }
+}
+
+.entryRay {
+  transform: scaleY(0.1);
+}
+
+

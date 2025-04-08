@@ -1,0 +1,161 @@
+.root {
+  position: absolute;
+  width: 100vw;
+  height: 100svh;
+  inset: 0;
+
+  color: white;
+
+  overflow: hidden;
+}
+
+.logicTexts {
+  position: absolute;
+  bottom: calc(50vh - 9vw);
+
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}
+
+.creativityTexts {
+  position: absolute;
+  top: 25vh;
+  transform: translateY(20rem);
+
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}
+
+.logic {
+  margin-left: -0.06em;
+  letter-spacing: -0.020em;
+
+  font-size: 36vw;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 75%;
+
+  color: transparent;
+  -webkit-text-stroke: 3px #fff;
+
+  &:not(:first-of-type) {
+    margin-top: -1lh;
+  }
+
+  opacity: 0;
+}
+
+.logicalThings {
+  position: absolute;
+  color: white;
+  font-size: 2vw;
+  font-family: Inter;
+  line-height: 75%;
+  width: max-content;
+  margin-top: -1em;
+  top: 1.7lh;
+
+  & > span {
+    opacity: 0;
+  }
+}
+
+.creativeThings {
+  position: absolute;
+  color: white;
+  font-size: 2vw;
+  font-family: Inter;
+  line-height: 75%;
+  width: max-content;
+  margin-top: -1em;
+  bottom: 4px;
+
+  & > span {
+    opacity: 0;
+  }
+}
+
+.creativity {
+  margin-left: -0.06em;
+  letter-spacing: -0.020em;
+
+  font-size: 18.5vw;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 75%;
+
+  color: transparent;
+  -webkit-text-stroke: 3px #fff;
+
+  &:not(:first-of-type) {
+    margin-top: -1lh;
+  }
+
+  opacity: 0;
+}
+
+.prism {
+  transform-origin: center;
+  opacity: 0;
+}
+
+.shapes {
+  transform-origin: center;
+}
+
+.phrase {
+  position: absolute;
+  top: calc(50vh);
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  width: max-content;
+
+  transform-origin: center;
+
+  font-family: Inter;
+
+  & span span {
+    display: inline-block;
+    opacity: 0;
+    line-height: 80%;
+  }
+
+  & .phraseWhere {
+    font-size: 2vw;
+  }
+
+  & .phraseCreativity {
+    font-size: 4.5vw;
+    margin-right: -0.15em;
+  }
+
+  & .phraseAnd {
+    font-size: 2vw;
+  }
+
+  & .phraseLogic {
+    font-size: 4.5vw;
+  }
+
+  & .phraseMeet {
+    font-size: 6vw;
+    transform: scaleY(1.1);
+    margin-right: -0.1em;
+  }
+
+  & .phraseAnd2 {
+    font-size: 4vw;
+  }
+
+  & .phraseUnite {
+    font-size: 6vw;
+    transform: scaleY(1.1);
+  }
+}
+

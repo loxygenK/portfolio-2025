@@ -1,0 +1,25 @@
+.hidden {
+  display: none;
+}
+
+.animating {
+  overflow-y: clip;
+  height: 100svh;
+}
+
+.animation {
+  position: relative;
+  z-index: -1;
+}
+
+.firstView {
+  container-type: inline-size;
+
+  width: min(100vw, max(69.5vw, calc(52vw + 33vh)));
+  height: 100svh;
+}
+
+.firstViewPadding {
+  height: 100vh;
+}
+

@@ -1,0 +1,16 @@
+.root {
+  transform-origin: center;
+}
+
+.shapes {
+  opacity: 0;
+}
+
+.trail {
+  opacity: 0;
+}
+
+.ray {
+  opacity: 0;
+}
+
