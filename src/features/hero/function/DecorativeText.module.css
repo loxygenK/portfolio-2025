@@ -1,0 +1,23 @@
+.translated {
+  position: absolute;
+  visibility: hidden;
+}
+
+.root:has(.translated > font) {
+  .decorativeText {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .descriptiveText {
+    position: static;
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.descriptiveText {
+  position: absolute;
+  visibility: hidden;
+}

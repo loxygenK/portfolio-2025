@@ -1,0 +1,67 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.blogPlug {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  padding: 1em 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.linkList {
+  display: flex;
+  gap: 0.5em;
+
+  @media screen and (width <= 1000px) {
+    flex-direction: column;
+    gap: 0.3em;
+  }
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  color: #c7588d;
+  padding: 0.2em 0.5em;
+  width: fit-content;
+
+  &:hover,
+  &:focus {
+    background-color: #c7588d;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: unset;
+    color: #c7588d;
+  }
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  color: #c7588d;
+  padding: 0.2em 0.5em;
+  width: fit-content;
+}
+
+.emailAddress {
+  display: flex;
+  flex-flow: row-reverse;
+  width: fit-content;
+  user-select: none;
+}
+
+.caveats {
+  padding: 0 0.5em;
+  font-size: 0.9em;
+}
+
+.serviceName {
+  font-size: 1.4em;
+}

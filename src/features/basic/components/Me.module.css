@@ -1,0 +1,54 @@
+.root {
+  width: 100%;
+  transform-origin: center;
+}
+
+.shake {
+  animation: 0.2s shake alternate infinite step-end;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-0.5px, 0px) rotate(-0.3deg);
+  }
+  25% {
+    transform: translate(0px, 0.5px) rotate(0.2deg);
+  }
+  50% {
+    transform: translate(0px, -0.5px) rotate(-0.3deg);
+  }
+  75% {
+    transform: translate(0.5px, 0px) rotate(0.2deg);
+  }
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #c3903f;
+
+  cursor: grab;
+
+  &.grabbing {
+    cursor: grabbing;
+  }
+}
+
+.popOut {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 80%;
+  height: 1.5em;
+  margin: 0.5em auto;
+
+  color: #bd9554;
+  stroke: #bd9554;
+
+  .lines {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,28 +1,28 @@
 {
   "name": "pf2025-tryout",
   "private": true,
+  "license": "CC-BY-NC-4.0",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "pnpm biome lint ./src/**/*",
+    "format": "pnpm biome format ./src/**/*",
     "preview": "vite preview"
   },
   "dependencies": {
     "@types/animejs": "^3.1.13",
     "animejs": "^4.0.0",
+    "classnames": "^2.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.21.0",
+    "@biomejs/biome": "^1.9.4",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.21.0",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
@@ -31,6 +31,7 @@
   "packageManager": "pnpm@10.6.5+sha256.47c8bca42b4b48534b5b1b28d573c506773937b02f68e52992fbd8269131c5c8",
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@biomejs/biome",
       "esbuild"
     ]
   }

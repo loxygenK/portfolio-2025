@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import './App.css'
-import { Driver } from './animations/_drivers'
-import { WhereIWouldBe } from './animations/WhereIWouldBe';
+import { type FC, useCallback, useState } from 'react'
 
 import styles from "./App.module.css";
-import { ScrollSuggestions } from './animations/ScrollSuggestion';
-import { Header } from './Header';
+import { Hero } from './features/hero/content/Hero';
+import { BasicIntroduction } from './features/basic/content/BasicIntroduction';
+import { EngineeringSkill } from './features/skill/content/EngineeringSkill';
+import { PersonalTryouts } from './features/tryouts/content/PersonalTryouts';
+import { Activities } from './features/activities/content/Activities';
+import { Header } from './features/header/content/Header';
+import { Links } from './features/links/content/Links';
+import classNames from 'classnames';
 
 function App() {
   const [showContent, setShowContent] = useState(false);
 
+  const handleInitalAnimationDone = useCallback(() => {
+    setShowContent(true);
+  }, []);
+
   return (
-    <div className={showContent ? "" : styles.animating}>
+    <div className={classNames(styles.root,showContent ? "" : styles.animating)}>
       { showContent && <Header /> }
-      <figure className={styles.animation}>
-        <Driver onInitialAnimationDone={() => setShowContent(true)} />
-      </figure>
-      { !showContent && <div className={styles.firstViewPadding} /> }
-      <div className={`${styles.firstView} ${showContent ? "" : styles.hidden}`}>
-        { showContent && (
-          <>
-            <WhereIWouldBe />
-            <ScrollSuggestions />
-          </>
-        )}
-      </div>
-      <div>
-        {"CONTENTS ".repeat(1000)}
-      </div>
+      <Hero onInitialAnimationDone={handleInitalAnimationDone} />
+      <Content shown={showContent} />
     </div>
   )
+}
+
+type ContentProps = {
+  shown: boolean;
+};
+const Content: FC<ContentProps> = ({ shown }) => {
+  return (
+    <main className={classNames(styles.content, !shown && styles.hidden)}>
+      <BasicIntroduction />
+      <EngineeringSkill />
+      <PersonalTryouts />
+      <Activities />
+      <Links />
+    </main>
+  );
 }
 
 export default App

@@ -1,0 +1,11 @@
+.hidden {
+  display: none;
+}
+
+.viewportRoot {
+  transform-origin: center;
+}
+
+.entryRay {
+  transform: scaleY(0.1);
+}

@@ -1,0 +1,92 @@
+.root {
+  display: grid;
+  grid-template-columns: 10em 1fr;
+  align-items: end;
+  gap: 2em;
+
+  @media screen and (width <= 750px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.me {
+  @media screen and (width <= 750px) {
+    display: none;
+  }
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 6px;
+}
+
+.name {
+  font-size: 2.25em;
+  letter-spacing: -0.02em;
+  line-height: 110%;
+}
+
+.ipa {
+  font-size: 1em;
+}
+
+.aka {
+  display: inline-block;
+  border: 1px solid #00000040;
+  padding: 0.05em 0.3em;
+  border-radius: 8px;
+}
+
+.job {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+}
+
+.ambiguity {
+  font-size: 0.7em;
+}
+
+.vagueLifeCareer {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.2em;
+
+  font-size: 1.3em;
+  color: #000a;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: end;
+  gap: 1em;
+
+  @media screen and (width <= 750px) and (width >= 500px) {
+    grid-template-columns: 1fr 20vw;
+  }
+
+  .paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+
+    font-size: 1.1em;
+  }
+
+  .meAtIntroduction {
+    display: none;
+
+    @media screen and (width <= 750px) and (width >= 500px) {
+      display: unset;
+    }
+  }
+}

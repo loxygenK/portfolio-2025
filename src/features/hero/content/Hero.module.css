@@ -1,0 +1,35 @@
+.root {
+  border-bottom: 0.25vmin solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.accessibility {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.animating {
+  overflow-y: clip;
+  height: 100svh;
+}
+
+.animation {
+  position: relative;
+  z-index: -1;
+  overflow-x: clip;
+}
+
+.firstView {
+  container-type: inline-size;
+  width: min(100vw, max(66.5vw, calc(52vw + 27vh)));
+  min-height: 100svh;
+}
+
+.firstViewPadding {
+  height: 100vh;
+}

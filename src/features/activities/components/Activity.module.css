@@ -1,0 +1,15 @@
+.heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+.title {
+  background-color: #c7588d;
+  width: fit-content;
+  height: 100%;
+  padding: 0.4em 1em 0.3em;
+  line-height: 80%;
+  color: white;
+  margin-bottom: 0.3em;
+}

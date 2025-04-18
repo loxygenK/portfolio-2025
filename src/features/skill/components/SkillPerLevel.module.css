@@ -1,0 +1,42 @@
+.root {
+  &.okay {
+    --theme: #c7588d;
+  }
+
+  &.sortaOkay {
+    --theme: #3daf78;
+  }
+
+  &.knowsFeeling {
+    --theme: #627fc9;
+  }
+
+  border-left: 2px solid var(--theme);
+}
+
+.heading {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  row-gap: 0.7em;
+}
+
+.levelName {
+  flex-shrink: 0;
+  background-color: var(--theme);
+  width: 12em;
+  height: 100%;
+  text-align: center;
+  padding-block: 0.4em 0.3em;
+  line-height: 80%;
+  color: white;
+}
+
+.description {
+  text-wrap: pretty;
+  margin-left: 0.7em;
+}
+
+.list {
+  padding: 0.8em 1.2em;
+}
