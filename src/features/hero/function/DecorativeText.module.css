@@ -3,6 +3,15 @@
   visibility: hidden;
 }
 
+.descriptiveText {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .root:has(.translated > font) {
   .decorativeText {
     position: absolute;
@@ -11,13 +20,11 @@
 
   .descriptiveText {
     position: static;
-    visibility: visible;
     width: 100%;
+    height: auto;
+    overflow: visible;
+    clip-path: none;
+    white-space: normal;
     opacity: 1;
   }
-}
-
-.descriptiveText {
-  position: absolute;
-  visibility: hidden;
 }

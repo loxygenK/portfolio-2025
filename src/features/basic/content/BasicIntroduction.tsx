@@ -33,7 +33,7 @@ export const BasicIntroduction: FC = () => {
           <span>・</span>
           <span>he/him</span>
           <span>・</span>
-          <span>21 yo</span>
+          <span>22 yo</span>
           <span>・</span>
           <span>高専本科卒</span>
         </p>

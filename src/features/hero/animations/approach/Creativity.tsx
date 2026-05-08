@@ -30,8 +30,9 @@ export const Creativity: SubAnimationFC = ({
             delay: stagger(600, { grid: GRID_AMOUNT, from: "center" }),
           },
           rotate: {
-            from: (_, i) => `${i * 5}deg`,
-            to: (_, i) => `${(i % 4 === 0 ? -1 : 1) * 360}deg`,
+            from: (_target: unknown, i: number) => `${i * 5}deg`,
+            to: (_target: unknown, i: number) =>
+              `${(i % 4 === 0 ? -1 : 1) * 360}deg`,
             ease: "linear",
             duration: 20000,
           },

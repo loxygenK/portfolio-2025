@@ -32,6 +32,11 @@ export const PersonalTryouts: FC = () => {
           お昼ご飯は結構変わります。
         </Paragraph>
       </Thing>
+      <Thing title={<>観測 <span className={styles.subAttribute}>観測者ヰ組</span></>}>
+        <Paragraph>
+          ヰ世界情緒をはじめとして、KAMITSUBAKI STUDIO / V.W.P を最近追い始めました! 歴は数ヶ月でそこまで長くはないですが。。
+        </Paragraph>
+      </Thing>
     </Section>
   );
 };

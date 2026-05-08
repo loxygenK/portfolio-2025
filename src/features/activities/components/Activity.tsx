@@ -5,7 +5,7 @@ import styles from "./Activity.module.css";
 type Props = {
   title: string;
   month: [year: number, month: number];
-  result?: string;
+  result?: ReactNode;
   children: ReactNode;
 };
 

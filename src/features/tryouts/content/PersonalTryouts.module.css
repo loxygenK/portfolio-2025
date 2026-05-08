@@ -3,3 +3,9 @@
   flex-direction: column;
   gap: 1.2em;
 }
+
+.subAttribute {
+  font-size: 0.8em;
+  font-style: italic;
+}
+

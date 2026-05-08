@@ -6,27 +6,27 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "pnpm biome lint ./src/**/*",
-    "format": "pnpm biome format ./src/**/*",
+    "build": "tsgo -b && vite build",
+    "lint": "pnpm biome lint ./src/**/* && tsgo --noEmit",
+    "format": "pnpm biome format ./src/**/* --write",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/animejs": "^3.1.13",
-    "animejs": "^4.0.0",
-    "classnames": "^2.5.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@types/animejs": "3.1.13",
+    "animejs": "4.4.1",
+    "classnames": "2.5.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
-    "globals": "^15.15.0",
-    "typescript": "~5.7.2",
-    "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0"
+    "@biomejs/biome": "2.4.14",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@typescript/native-preview": "7.0.0-dev.20260507.1",
+    "@vitejs/plugin-react": "6.0.1",
+    "globals": "17.6.0",
+    "typescript-eslint": "8.59.2",
+    "vite": "8.0.11"
   },
   "packageManager": "pnpm@10.6.5+sha256.47c8bca42b4b48534b5b1b28d573c506773937b02f68e52992fbd8269131c5c8",
   "pnpm": {

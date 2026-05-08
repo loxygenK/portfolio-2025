@@ -225,7 +225,8 @@ export const MessageScene: SubAnimationFC = ({ registerAnimation, hidden }) => {
           ],
           rotate: {
             from: "15deg",
-            to: (_, i) => (i % 4 === 0 ? "-=15deg" : "+=15deg"),
+            to: (_target: unknown, i: number) =>
+              i % 4 === 0 ? "-=15deg" : "+=15deg",
           },
           frameRate: 10,
         },

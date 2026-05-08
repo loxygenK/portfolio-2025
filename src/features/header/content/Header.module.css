@@ -11,14 +11,15 @@
   font-size: 0.8rem;
   padding: 0.1rem 0.5rem;
 
-  transition: 0.3s background-color, 0.3s padding-block;
+  transition:
+    0.3s background-color,
+    0.3s padding-block;
 
-  &:hover,
-  &:focus-within {
+  &:hover, &:focus-within {
     background-color: #fffe;
     padding-block: 0.4rem;
   }
-
+  
   @media screen and (width <= 400px) {
     justify-content: end;
   }

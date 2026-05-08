@@ -23,7 +23,7 @@ export const techs: Record<Level, Tech[]> = {
 //                      spreading them into individual lines would make data hard to follow
 export const utilities = [
   tech("Neovim"), tech("lazygit"), tech("Zellij"), tech("Starship"),
-  tech("MBA (M1 2020)"), tech("GPT-4o"), tech("GPT-o3"), tech("Lily58 Pro"), tech("ERGO M575"),
+  tech("MBA (M1 2020)"), tech("GPT-5"), tech("Claude Opus 4.7"), tech("HHKB Classic"), tech("ERGO M575"),
 ]
 
 function tech(name: string): Tech {

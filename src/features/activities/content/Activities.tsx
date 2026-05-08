@@ -10,7 +10,30 @@ export const Activities: FC = () => {
   return (
     <Section className={styles.root}>
       <Heading subText="ACTIVITIES">これまでにやってみたこと</Heading>
-      <Paragraph>出たイベントや資格等の記録です。</Paragraph>
+      <Paragraph>作ったものや、出たイベントや資格等の記録です。</Paragraph>
+      <Activity
+        month={[2026, 4]}
+        title="Iris // Photobook"
+        result={
+          <a href="https://iris.harulinwu.me/" rel="noreferrer noopener nofollow" target="_blank">
+            https://iris.harulinwu.me
+          </a>
+        }
+      >
+        <Paragraph>
+          React Router v7 + Rust w/axum で、写真保存アプリケーションを作ってみました。
+          Web アプリケーションと画像ストレージ部分を分けて拡張をしやすくしていたりするほか、
+          画像圧縮ができたり、画像のメタデータや近似色を取得できるなど、画像をデータとして取り扱いやすくしたりもしています。<br />
+        </Paragraph>
+        <Paragraph>
+          まだ機能は多くはないですが、今後もゆっくり拡張をしていくつもりです!
+        </Paragraph>
+        <Paragraph className={styles.links}>
+          GitHub ...
+          <a href="https://github.com/pastel-biota/iris">Web アプリケーション部分 / Iris</a> ・
+          <a href="https://github.com/pastel-biota/iridescence">ストレージ部分 / Iridescence</a>
+        </Paragraph>
+      </Activity>
       <Activity
         month={[2025, 3]}
         title="Web Speed Hackathon 2025"

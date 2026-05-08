@@ -72,12 +72,12 @@ export const IntersectScene: SubAnimationFC = ({
             { to: 0, duration: 2000, ease: "linear", delay: 1000 },
           ],
           translateX: {
-            from: (_, i) =>
+            from: (_target: unknown, i: number) =>
               angled(
                 10,
                 -140 + SPARSE_ANGLE - STEP_ANGLE * i + angleSkews[i],
               )[0],
-            to: (_, i) =>
+            to: (_target: unknown, i: number) =>
               angled(
                 80 + lengthSkews[i],
                 -140 + SPARSE_ANGLE - STEP_ANGLE * i + angleSkews[i],
@@ -85,12 +85,12 @@ export const IntersectScene: SubAnimationFC = ({
             duration: 4000,
           },
           translateY: {
-            from: (_, i) =>
+            from: (_target: unknown, i: number) =>
               angled(
                 5,
                 -140 + SPARSE_ANGLE - STEP_ANGLE * i + angleSkews[i],
               )[1],
-            to: (_, i) =>
+            to: (_target: unknown, i: number) =>
               angled(
                 80 + lengthSkews[i],
                 -140 + SPARSE_ANGLE - STEP_ANGLE * i + angleSkews[i],

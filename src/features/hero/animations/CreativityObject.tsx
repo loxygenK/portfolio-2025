@@ -5,6 +5,7 @@ import styles from "./CreativityObject.module.css";
 import { forXY, randomInt, type XY } from "../sketch/util";
 
 const LINE_LENGTH = 20;
+const GRID_SPARSE = [40, 40] as const;
 
 type Props = {
   idPrefix: string;
@@ -61,15 +62,14 @@ const Shapes: FC<ShapesProps> = ({
 }) => {
   const gridSize = forXY((i) => canvasArea[i] / gridAmount[i]);
   const gridShift = forXY((i) => ((i === 0 ? 1280 : 720) - canvasArea[i]) / 2);
-  const gridSparse = [40, 40];
 
   const pointCount = useMemo(() => randomInt(3, 8), []);
 
   const diff = useMemo(
     () =>
       [
-        randomInt(-gridSparse[0], gridSparse[0]),
-        randomInt(-gridSparse[1], gridSparse[1]),
+        randomInt(-GRID_SPARSE[0], GRID_SPARSE[0]),
+        randomInt(-GRID_SPARSE[1], GRID_SPARSE[1]),
       ] as const,
     [],
   );

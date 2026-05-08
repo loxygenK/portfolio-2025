@@ -10,7 +10,7 @@ type Props = {
 
 export const SplitByChar: FC<Props> = ({ children, text, helperClassName }) => {
   return (
-    <p aria-label={text} className={styles.root}>
+    <p className={styles.root}>
       <span className={styles.translated} aria-hidden>
         翻訳
       </span>
